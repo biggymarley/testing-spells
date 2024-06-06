@@ -13,9 +13,10 @@ const columns = [
 ];
 
 function getRowId(row) {
-    return uuidv4();
+    return row.Name;
   }
 export default function TableData() {
+    
   return (
     <div style={{ height: 400, width: '100%' }}>
       <DataGrid
